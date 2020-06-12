@@ -1,3 +1,5 @@
+import API from 'goals-todos-api';
+
 export const RECIEVE_DATA = "RECIEVE_DATA";
 
 function recieveData(todos, goals) {

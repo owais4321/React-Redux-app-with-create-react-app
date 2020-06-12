@@ -1,3 +1,6 @@
+import API from 'goals-todos-api';
+
+
 export const ADD_GOAL = "ADD_GOAL";
 export const REMOVE_GOAL = "REMOVE_GOAL";
 

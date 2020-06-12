@@ -1,9 +1,20 @@
-import React from 'react';
-
-function App() {
-  return (
-<div>Hello world</div>
+import React, {Component} from 'react';
+import ConnectedTodos from './Todos';
+import ConnectedGoals from './Goals';
+import {connect} from 'react-redux';
+import {initialDataHandler} from '../actions/shared';
+class App extends Component {
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch(initialDataHandler());
+  }
+  render() {
+    return (
+      <div>
+        <ConnectedTodos />
+        <ConnectedGoals />
+      </div>
     );
+  }
 }
-
-export default App;
+export default connect((store)=>{})(App);
