@@ -1,0 +1,17 @@
+body{
+    margin : 10px;
+}
+li{
+    color :black
+}
+button{
+    background-color: tomato;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+input{
+    width: 300px;
+    border-radius: 30px;
+    height:30px;
+    padding: 5px;
+}
